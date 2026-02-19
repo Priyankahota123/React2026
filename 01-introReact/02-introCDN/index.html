@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- CDN Links -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">
+    </script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">
+    </script>
+
+    <script>
+        // let check ="Works":
+        // console.log(check);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        // console.log(root);
+
+        // const div = React.createElement("h1", null, "Learning React");
+
+        const h1 = React.createElement("h1", null, "Learning React");
+        // console.log(h1);
+        const p = React.createElement("h1", null, "BCA Learning React");
+
+        // define function handleclick 
+        function handleClick(){
+            alert("React has been activated!!! Boom!!!")
+        }
+         const button = React.createElement("button",{onClick: handleclick}, "Activate Me",);
+
+        const div = React.createElement("div", null, h1, p, button);
+
+        // React.createElement("h1", null, "Learning React");
+        // root.render(h1, p);
+
+        root.render(div);
+        
+        
+        
+    </script>
+</body>
+</html>
